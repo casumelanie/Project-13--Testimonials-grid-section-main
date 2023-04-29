@@ -1,0 +1,135 @@
+/*
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  */
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    color: white;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5;
+    line-height: 1.4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    width: 78%;
+    margin: 5% auto 5% auto;
+    gap: 3%;
+}
+
+.container {
+    height: auto;
+    border-radius: 8px;
+    padding: 25px 30px 15px 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+    background-position: 80% 0;
+    background-size: 104px 110px;
+}
+
+.container-2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.container-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+}
+
+.container-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.container-5 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    color: hsl(219, 29%, 14%);
+}
+
+.container-identity {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.container-identity div {
+    opacity: 81%;
+}
+
+    .container-identity img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: 2px solid hsla(0, 0%, 81%, 50%);
+        margin-right: 3%;
+    }
+
+    .container-identity--status {
+        opacity: 50%;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+.container-review-paragraph {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 81%;
+}
+
+.container-quotation-paragraph {
+    opacity: 50%;
+}
+
+.attribution {
+    color: hsla(219, 29%, 14%, 70%);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(217, 19%, 35%);
+}
+.attribution a:hover {
+    color: hsl(263, 55%, 52%);
+
+}
+
+@media all and (max-width:375px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        gap: 25px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .container-review-paragraph {
+        margin: 15px auto;
+    }
+}
